@@ -47,6 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const tulis_indicator = document.getElementById('tulis_indicator');
 
     const tombol_bayar = document.getElementById('tombolbayar');
+    const tombol_bayar_p = document.getElementById('font_tombol');
+    
+
+    var nominalFilled = 0;
+    var metodeFilled = 0;
 
     function resetNominal() {
         nom1_indicator.style.backgroundColor = "rgb(126, 126, 126)";
@@ -58,11 +63,20 @@ document.addEventListener("DOMContentLoaded", function () {
         tulis_indicator.style.backgroundColor = "rgb(126, 126, 126)";
     }
 
+    function changeButton (){
+        if (nominalFilled == 1 && metodeFilled == 1) {
+            tombol_bayar.style.backgroundColor = "#1b4248";
+            tombol_bayar_p.style.color = "#ffd57a";
+        }
+    }
+
     nom1.addEventListener('click', () => {
         resetNominal();
         nom1_indicator.style.backgroundColor = "#1b4248";
         nominal_fin.innerText = "Nominal: " + formatter.format(50000);
         input_box.value = "";
+        nominalFilled = 1;
+        changeButton();
     });
 
     nom2.addEventListener('click', () => {
@@ -70,6 +84,8 @@ document.addEventListener("DOMContentLoaded", function () {
         nom2_indicator.style.backgroundColor = "#1b4248";
         nominal_fin.innerText = "Nominal: " + formatter.format(75000);
         input_box.value = "";
+        nominalFilled = 1;
+        changeButton();
     });
 
     nom3.addEventListener('click', () => {
@@ -77,6 +93,8 @@ document.addEventListener("DOMContentLoaded", function () {
         nom3_indicator.style.backgroundColor = "#1b4248";
         nominal_fin.innerText = "Nominal: " + formatter.format(100000);
         input_box.value = "";
+        nominalFilled = 1;
+        changeButton();
     });
 
     nom4.addEventListener('click', () => {
@@ -84,6 +102,8 @@ document.addEventListener("DOMContentLoaded", function () {
         nom4_indicator.style.backgroundColor = "#1b4248";
         nominal_fin.innerText = "Nominal: " + formatter.format(150000);
         input_box.value = "";
+        nominalFilled = 1;
+        changeButton();
     });
 
     nom5.addEventListener('click', () => {
@@ -91,6 +111,8 @@ document.addEventListener("DOMContentLoaded", function () {
         nom5_indicator.style.backgroundColor = "#1b4248";
         nominal_fin.innerText = "Nominal: " + formatter.format(200000);
         input_box.value = "";
+        nominalFilled = 1;
+        changeButton();
     });
 
     nom6.addEventListener('click', () => {
@@ -98,11 +120,15 @@ document.addEventListener("DOMContentLoaded", function () {
         nom6_indicator.style.backgroundColor = "#1b4248";
         nominal_fin.innerText = "Nominal: " + formatter.format(300000);
         input_box.value = "";
+        nominalFilled = 1;
+        changeButton();
     });
 
     tulis.addEventListener('click', () => {
         resetNominal();
         tulis_indicator.style.backgroundColor = "#1b4248";
+        nominalFilled = 1;
+        changeButton();
     });
 
     input_box.addEventListener('keyup', () => {
@@ -112,6 +138,18 @@ document.addEventListener("DOMContentLoaded", function () {
     met1.addEventListener('click', () => {
         met1_indicator.style.backgroundColor = "#1b4248";
         metode_fin.innerText = "Metode Pembayaran: BCA";
+        metodeFilled = 1;
+        changeButton();
+    });
+
+    const confirmation_text = document.getElementById('confirmation_text');
+    var tombol_clicked = 0;
+
+    tombol_bayar.addEventListener('click', () => {
+        if (nominalFilled == 1 && metodeFilled == 1 && tombol_clicked == 0) {
+            confirmation_text.innerHTML = "Tekan tombol sekali lagi untuk melakukan pembayaran"
+            tombol_clicked = 1;
+        }
     });
 
 });
