@@ -1,36 +1,36 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-.navbar{
+.navbar {
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
 
-.main-nav{
-    display : flex;
+.main-nav {
+    display: flex;
     flex-direction: row;
-    width : 100%;
+    width: 100%;
     height: 80px;
     padding: 5px;
     background-color: #1b4248;
 }
 
-.title{
-    display : flex;
+.title {
+    display: flex;
     align-items: center;
 }
 
-.icon{
+.icon {
     height: 50px;
 }
 
-.container{
+.container {
     display: flex;
-    width : 100vw;
+    width: 100vw;
     height: 80px;
     padding-left: 35px;
     padding-right: 15px;
@@ -38,34 +38,34 @@
     overflow: hidden;
 }
 
-.manage{
-    display : flex;
+.manage {
+    display: flex;
     margin-left: -65px;
     flex-direction: row;
 }
 
-.search{
-    display : flex;
+.search {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     max-width: 100%;
-    width : 85vw;
+    width: 85vw;
 }
 
-.search-bar{
+.search-bar {
     box-sizing: border-box;
-    width :80%;
+    width: 80%;
 }
 
-.search-bar form{
-    display : flex;
+.search-bar form {
+    display: flex;
     justify-content: center;
     border-radius: 10px;
 }
 
-.input{
-    width : 70%;
+.input {
+    width: 70%;
     height: 1.8rem;
     padding-left: 15px;
     padding-right: 15px;
@@ -79,40 +79,40 @@
     margin-bottom: 5px;
     margin-top: 5px;
     transition: 0.5s;
-    color : #fff;
+    color: #fff;
 }
 
 .input:focus {
     border-bottom: 3px solid #9d8248;
     background-color: #9d824810;
-    color : #fff;
+    color: #fff;
     font-size: 18px;
     margin-bottom: 3px;
     border-radius: 25px;
-    width : 62%;
+    width: 62%;
 }
 
-.input:hover{
+.input:hover {
     border-bottom: 3px solid #9d8248;
     background-color: #9d824810;
-    color : #fff;
+    color: #fff;
     font-size: 17.5px;
 }
 
-.menu{
-    display : flex;
-    height : 2rem;
+.menu {
+    display: flex;
+    height: 2rem;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 3px;
-    width : 55vw;
+    width: 55vw;
 }
 
-.menu a{
-    display : flex;
-    padding : 0.5rem;
-    color : #fff;
+.menu a {
+    display: flex;
+    padding: 0.5rem;
+    color: #fff;
     margin-left: 5px;
     margin-right: 5px;
     font-size: 18px;
@@ -120,36 +120,42 @@
     text-decoration: none;
 }
 
-.sub-manage{
+.sub-manage {
     display: flex;
     align-items: center;
     flex-direction: row;
     margin-right: 35px;
 }
 
-.account{
+.account {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.user{
-    display : flex;
+.user {
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin-right : 3vw;
+    margin-right: 3vw;
     height: 100%;
 }
 
-.asset-user{
-    padding : 1vh 1vw;
+.asset-user {
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: row;
 }
 
-.user-img{
+.user-img {
     height: 30px;
 }
 
-.sub-menu{
+.user-img:hover {
+    cursor: pointer;
+}
+
+.sub-menu {
     right: 0;
     top: 90px;
     position: absolute;
@@ -160,15 +166,15 @@
     transition: height 0.5s ease-in-out;
 }
 
-.sub-menu.open{
+.sub-menu.open {
     height: 150px;
 }
 
-.account-menu{
+.account-menu {
     position: relative;
     display: flex;
-    align-items :center;
-    justify-content:space-evenly;
+    align-items: center;
+    justify-content: space-evenly;
     flex-direction: column;
     height: 100%;
     width: 200px;
@@ -179,9 +185,9 @@
 
     font-size: 17px;
     letter-spacing: 1px;
-    transition : 1s;
+    transition: 1s;
 
-    color:#fff;
+    color: #fff;
 
 }
 
@@ -197,7 +203,7 @@
     transition: width 0.5s ease;
     cursor: pointer;
     background: linear-gradient(#347e8900, #347e8900);
-    transition : 1s;
+    transition: 1s;
 }
 
 .Login:hover {
@@ -226,7 +232,7 @@
 
 .Login:hover .background1 {
     width: 100%;
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
 }
 
 .Register {
@@ -241,11 +247,11 @@
     transition: width 0.5s ease;
     cursor: pointer;
     background: linear-gradient(#347e8900, #347e8900);
-    transition : 1s;
+    transition: 1s;
 }
 
 .Register:hover {
-    width: 100%;    
+    width: 100%;
     border-radius: 0 0 0 0;
 }
 
@@ -270,7 +276,7 @@
 
 .Register:hover .background2 {
     width: 100%;
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
 }
 
 .Top-up {
@@ -285,7 +291,7 @@
     transition: width 0.5s ease;
     cursor: pointer;
     background: linear-gradient(#347e8900, #347e8900);
-    transition : 1s;
+    transition: 1s;
     font-weight: bold;
 }
 
@@ -315,165 +321,165 @@
 
 .Top-up:hover .background3 {
     width: 100%;
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
 }
 
 
-.home{
+.home {
     display: flex;
-    width : 100%;
-    padding : 2.5px 10px;
+    width: 100%;
+    padding: 2.5px 10px;
     text-align: center;
     border-radius: 50px;
-    cursor : pointer;
-    position : relative;
+    cursor: pointer;
+    position: relative;
     overflow: hidden;
     z-index: 2;
 }
 
 
-.home span{
+.home span {
     display: flex;
-    background-color : #24565e;
-    height : 100%;
-    width : 0;
+    background-color: #24565e;
+    height: 100%;
+    width: 0;
     border-radius: 25px;
-    position : absolute;
-    left : 0;
-    bottom : 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     transition: 0.5s ease-out;
     z-index: -2;
 }
 
-.home:hover span{
-    width : 100%
+.home:hover span {
+    width: 100%
 }
 
-.now-playing{
+.now-playing {
     display: flex;
-    width : 100%;
-    padding : 2.5px 10px;
+    width: 100%;
+    padding: 2.5px 10px;
     text-align: center;
     border-radius: 50px;
-    cursor : pointer;
-    position : relative;
+    cursor: pointer;
+    position: relative;
     overflow: hidden;
     z-index: 2;
 }
 
 
-.now-playing span{
+.now-playing span {
     display: flex;
-    background-color : #24565e;
-    height : 100%;
-    width : 0;
+    background-color: #24565e;
+    height: 100%;
+    width: 0;
     border-radius: 25px;
-    position : absolute;
-    left : 0;
-    bottom : 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     transition: 0.5s ease-out;
     z-index: -2;
 }
 
-.now-playing:hover span{
-    width : 100%
+.now-playing:hover span {
+    width: 100%
 }
 
-.theatres{
+.theatres {
     display: flex;
-    width : 100%;
-    padding : 2.5px 10px;
+    width: 100%;
+    padding: 2.5px 10px;
     text-align: center;
     border-radius: 50px;
-    cursor : pointer;
-    position : relative;
+    cursor: pointer;
+    position: relative;
     overflow: hidden;
     z-index: 2;
 }
 
 
-.theatres span{
+.theatres span {
     display: flex;
-    background-color : #24565e;
-    height : 100%;
-    width : 0;
+    background-color: #24565e;
+    height: 100%;
+    width: 0;
     border-radius: 25px;
-    position : absolute;
-    left : 0;
-    bottom : 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     transition: 0.5s ease-out;
     z-index: -2;
 }
 
-.theatres:hover span{
-    width : 100%
+.theatres:hover span {
+    width: 100%
 }
 
-.upcoming{
+.upcoming {
     display: flex;
-    width : 100%;
-    padding : 2.5px 10px;
+    width: 100%;
+    padding: 2.5px 10px;
     text-align: center;
     border-radius: 50px;
-    cursor : pointer;
-    position : relative;
+    cursor: pointer;
+    position: relative;
     overflow: hidden;
     z-index: 2;
 }
 
 
-.upcoming span{
+.upcoming span {
     display: flex;
-    background-color : #24565e;
-    height : 100%;
-    width : 0;
+    background-color: #24565e;
+    height: 100%;
+    width: 0;
     border-radius: 25px;
-    position : absolute;
-    left : 0;
-    bottom : 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     transition: 0.5s ease-out;
     z-index: -2;
 }
 
-.upcoming:hover span{
-    width : 100%
+.upcoming:hover span {
+    width: 100%
 }
 
-.about-us{
+.about-us {
     display: flex;
-    width : 100%;
-    padding : 2.5px 10px;
+    width: 100%;
+    padding: 2.5px 10px;
     text-align: center;
     border-radius: 50px;
-    cursor : pointer;
-    position : relative;
+    cursor: pointer;
+    position: relative;
     overflow: hidden;
     z-index: 2;
 }
 
 
-.about-us span{
+.about-us span {
     display: flex;
-    background-color : #24565e;
-    height : 100%;
-    width : 0;
+    background-color: #24565e;
+    height: 100%;
+    width: 0;
     border-radius: 25px;
-    position : absolute;
-    left : 0;
-    bottom : 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     transition: 0.5s ease-out;
     z-index: -2;
 }
 
-.about-us:hover span{
-    width : 100%
+.about-us:hover span {
+    width: 100%
 }
 
-.account-menu a{
-    display : flex;
+.account-menu a {
+    display: flex;
     justify-content: center;
     text-decoration: none;
-    color : #fff;
+    color: #fff;
     width: 100%;
     height: 100%;
 }
