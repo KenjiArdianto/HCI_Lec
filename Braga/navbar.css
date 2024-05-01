@@ -141,12 +141,18 @@
     height: 100%;
 }
 
-.asset-user{
-    padding : 1vh 1vw;
+.asset-user {
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: row;
 }
 
 .user-img{
     height: 30px;
+}
+
+.user-img:hover {
+    cursor: pointer;
 }
 
 .sub-menu{
